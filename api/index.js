@@ -47,7 +47,7 @@ const upload = multer({ storage });
 // File upload endpoint
 app.post("/api/upload", upload.single("file"), function (req, res) {
   const file = req.file;
-  const imageUrl = `https://copy-2-8-backend.onrender.com/uploads/${file.filename}`; // replace with your actual backend URL
+  const imageUrl = `https://copy-2-5.onrender.com/uploads/${file.filename}`; // replace with your actual backend URL
   res.status(200).json(imageUrl);
 });
 
