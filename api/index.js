@@ -18,7 +18,10 @@ import multer from "multer";
 
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:5173', // specify the frontend URL
+   origin: [
+    'http://localhost:5173', // for local development
+    'https://copy-2-8.onrender.com' // for deployed frontend
+  ],
     credentials: true,  // allow cookies to be sent with cross-origin requests
   }));
   
