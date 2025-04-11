@@ -42,7 +42,8 @@ const Home = () => {
       {posts.map((post) => (
         <div className="post" key={post.id}>
           <div className="img">
-            <img src={`./upload/${post.img}`} alt="" />
+         <img src={`https://copy-2-5.onrender.com/uploads/${post.img}`} alt="" />
+
           </div>
           <div className="content">
             <div className="link">
