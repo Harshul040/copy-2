@@ -8,6 +8,7 @@
     "start": "node index.js"
   },
   "keywords": [],
+  "pg": "^8.11.0",
   "author": "",
   "license": "ISC",
   "dependencies": {
