@@ -17,7 +17,7 @@ export const getPosts = (req, res) => {
 
 export const getPost = (req, res) => {
   const q = `
-    SELECT p.id, username, title, desc, p.img, u.img AS userImg, cat, date 
+    SELECT p.id, username, title, "desc", p.img, u.img AS userImg, cat, date 
     FROM "user" u 
     JOIN posts p ON u.id = p.uid 
     WHERE p.id = $1`;
@@ -43,7 +43,7 @@ export const addPost = (req, res) => {
     }
 
     const q = `
-      INSERT INTO posts(title, desc, img, cat, date, uid) 
+      INSERT INTO posts(title, "desc", img, cat, date, uid) 
       VALUES ($1, $2, $3, $4, $5, $6)`;
 
     const values = [
@@ -94,7 +94,7 @@ export const updatePost = (req, res) => {
 
     const q = `
       UPDATE posts 
-      SET title = $1, desc = $2, img = $3, cat = $4 
+      SET title = $1, "desc" = $2, img = $3, cat = $4 
       WHERE id = $5 AND uid = $6`;
 
     const values = [
