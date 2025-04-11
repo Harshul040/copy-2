@@ -58,8 +58,8 @@ export const login = (req, res) => {
 
         res.cookie("access_token", token, {
             httpOnly: true,
-            secure: false, // change to true if using HTTPS
-            sameSite: 'strict',
+            secure: true, // change to true if using HTTPS
+            sameSite: 'none',
         }).status(200).json(other);
     });
 };
