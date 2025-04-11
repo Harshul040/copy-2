@@ -23,7 +23,7 @@ const Register = () => {
 
     try {
         //const res = await axios.post("/auth/register", inputs);
-        await axios.post("http://localhost:8800/api/auth/register", inputs);
+        await axios.post("https://copy-2-5.onrender.com/api/auth/register", inputs);
         navigate("/login");
 
         //console.log("Response:", res.data);
