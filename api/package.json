@@ -8,11 +8,11 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "pg": "^8.11.0",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "pg": "^8.11.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "express": "^4.21.2",
